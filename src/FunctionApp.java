@@ -8,6 +8,7 @@ public class FunctionApp {
     }
     static void sayHello(){
         System.out.println("Hello");
+
     }
     static void blackboardPunishment(int repeatNumber){
         for (int i = 1 ; i<= repeatNumber ; i++){
