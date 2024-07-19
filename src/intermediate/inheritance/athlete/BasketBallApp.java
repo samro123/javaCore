@@ -11,7 +11,7 @@ public class BasketBallApp {
         basketBallPlayers[1] = be;
         basketBallPlayers[2] = kobe;
         for(BasketBallPlayer basketBallPlayer: basketBallPlayers){
-            basketBallPlayer.freeThrow();
+            basketBallPlayer.getBio();
         }
     }
 }
