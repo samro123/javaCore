@@ -1,6 +1,6 @@
 package intermediate.inheritance.car;
 
-public class Car {
+public abstract class Car {
 
     private byte numberOfSeats = 5;
     private byte numberOfDoors = 3;
@@ -49,9 +49,7 @@ public class Car {
     }
 
 
-    public void startTheEngine(){
-        System.out.println("The engine is started");
-    }
+    public abstract void startTheEngine();
 
     public void getDescription(){
         System.out.println("A " + color + " " + carName + " is created.");
@@ -70,5 +68,25 @@ public class Car {
         System.out.println("Number of previous owners: " + numberOfVehicleOwners);
         System.out.println("Number of doors: " + numberOfDoors);
         System.out.println("Number of seats: " + numberOfSeats);
+    }
+
+    public int getPrice() {
+        return price;
+    }
+
+    public void setPrice(int price) {
+        this.price = Math.abs(price);
+    }
+
+    public int getMileage(){
+        return mileage;
+    }
+
+    public void drive(int mileage){
+        this.mileage += Math.abs(mileage);
+    }
+
+    public String getCarName(){
+        return carName;
     }
 }

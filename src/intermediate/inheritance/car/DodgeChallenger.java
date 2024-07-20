@@ -1,6 +1,6 @@
 package intermediate.inheritance.car;
 
-public class DodgeChallenger extends Car{
+public class DodgeChallenger extends Car implements ElectricMode{
 
 
 
@@ -18,4 +18,9 @@ public class DodgeChallenger extends Car{
      public void startTheEngine() {
           System.out.println("Dodge challenger");
      }
+
+    @Override
+    public void startTheElectriEngine() {
+        System.out.println("Dodge Challenger starts its electric engine");
+    }
 }
