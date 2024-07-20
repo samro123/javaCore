@@ -1,4 +1,4 @@
-package intermediate.inheritance.finalkeywork;
+package intermediate.inheritance.finalkeyword;
 
 public class Country {
 
