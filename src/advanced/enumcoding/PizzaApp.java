@@ -1,4 +1,4 @@
-package advanced;
+package advanced.enumcoding;
 
 public class PizzaApp {
     public static void main(String[] args) {
