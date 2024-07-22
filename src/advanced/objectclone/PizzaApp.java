@@ -19,6 +19,7 @@ public class PizzaApp {
         System.out.println("Size: " + samePizza.getPizzaSize().getPizzaSizeText());
         System.out.println("Price: " + samePizza.getPrice());
 
+        System.out.println(pizzaOrder.equals(samePizza));
 
     }
 }
