@@ -21,5 +21,8 @@ public class PizzaApp {
 
         System.out.println(pizzaOrder.equals(samePizza));
 
+        System.out.println("--------------------------");
+        System.out.println("PizzaOrder's hashcode: " + pizzaOrder.hashCode());
+        System.out.println("Same hashcode: "+ samePizza.hashCode());
     }
 }
