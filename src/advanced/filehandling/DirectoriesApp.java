@@ -1,0 +1,24 @@
+package advanced.filehandling;
+
+import java.io.File;
+import java.lang.reflect.Array;
+import java.util.Arrays;
+
+public class DirectoriesApp {
+    public static void main(String[] args) {
+        File businessBooksDirectory = new File("Ebook\\Business");
+
+        if(businessBooksDirectory.mkdirs()){
+            System.out.println("The new directory is created.");
+        }else {
+            System.out.println("Can't create the directory.");
+        }
+
+        businessBooksDirectory.deleteOnExit();
+
+        File fileHandlingDirectory = new File("src\\advanced\\filehandling");
+        System.out.println("Files in the filehandling directory:");
+        System.out.println(Arrays.toString(fileHandlingDirectory.list()));
+        System.out.println(Arrays.toString(fileHandlingDirectory.listFiles()));
+    }
+}
